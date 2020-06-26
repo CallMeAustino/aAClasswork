@@ -2,13 +2,13 @@
 	<nav class="left-nav">
 		<ul>
 			<li id="sections-sidebar-btn">
-			<button class="sections-button">
+			<button class="sections-button white">
 				<i class="fa fa-bars"></i>
 				<span>sections</span>
 			</button>
 			</li>
 			<li id="search-modal-btn">
-				<button class="search-button">
+				<button class="search-button white">
 				<i class="fa fa-search"></i>
 				<span>search</span>
 				</button>
@@ -18,18 +18,19 @@
 	<nav class="right-nav">
 		<ul>
 			<li id="sections-sidebar-btn">
-				<button class="subscribe-button">
+				<button class="subscribe-button blue">
 					<span>Subscribe Now</span>
 				</button>
 			</li>
 			<li id="login-modal-btn">
-				<button class="login-button">
+				<button class="login-button blue">
 				<span>Log In</span>
 				</button>
 			</li>
-			<li id="gear-btn">
-				<button class="gear-button">
+			<li id="gear-dropdown-btn">
+				<button class="gear-button white">
 					<i class="fas fa-cog"></i>
+					<%= render partial: 'shared/gear_dropdown' %>
 				</button>
 			</li>
 		</ul>
