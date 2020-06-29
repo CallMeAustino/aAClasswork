@@ -1,0 +1,22 @@
+<h1>Welcome <%="#{current_user.username}"%>!</h1>
+
+<div>
+    <ul>
+    Check out these cools subs!
+        <% @subs.each do |sub| %>
+            <ul>
+                <li>
+                    <a href="<%=sub_url(sub)%>">
+                        <p><%= sub.title %></p>
+                    </a>
+                </li>
+            </ul >
+        <% end %>
+    </ul>
+</div>
+
+<div>
+<form action="<%=new_sub_url%>" method="GET">
+    <input type="submit" value="Create a Sub">
+</form>
+</div>
