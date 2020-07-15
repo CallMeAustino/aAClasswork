@@ -1,0 +1,17 @@
+.bombed {
+    display: inline-block;
+}
+
+.revealed {
+    display: inline-block;
+
+}
+
+.flaged {
+    display: inline-block;
+
+}
+
+.unexplored {
+    display: inline-block; 
+}
